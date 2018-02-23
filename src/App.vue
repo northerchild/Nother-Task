@@ -10,26 +10,36 @@
   </header>
 
    <!--Estructura de las tablas-->   
-     <div class="container mt-4">
-      <form class="mb-3">
-        <input class="mr-4" type="text" placeholder="Escribe Tú Tarea">
+     <div class="container mt-5">
+      <form class="mb-5">
+        <input class="mr-5 text-center" type="text" placeholder="Escribe Tú Tarea">
       <input type="submit" value="Añadir tarea" class="btn btn-success">
        </form>
           <div class="row">
             <div class="col">
              <table class="table">
-            <thead>
+            <thead class="table-bordered">
               <tr>
                 <th>¡Hecho!</th>
                 <th>Tarea</th>
                 <th>Borrar</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="">
               <tr>
-                <td><input type="checkbox" class="mt-3"></td>
-                <td ></td>
-                <td><button class="btn btn-danger mt-3">Eliminar</button></td>
+                <td><input type="checkbox"></td>
+                <td class="">Primer tarea</td>
+                <td><button class="btn btn-danger ">Eliminar</button></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td class="">segunda tarea</td>
+                <td><button class="btn btn-danger ">Eliminar</button></td>
+              </tr>
+              <tr>
+                  <td><input type="checkbox"></td>
+                  <td class="">tercera tarea</td>
+                  <td><button class="btn btn-danger ">Eliminar</button></td>
               </tr>
             </tbody>
            </table>
@@ -37,6 +47,17 @@
           </div>
         </div>
     <!--Fin de las tablas-->
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col mt-5">
+            <p>Todos los derechos reservados &reg; Northerchild-2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!--Fin Footer-->
   </div>
 </template>
 <script>
@@ -81,7 +102,7 @@ li {
 a {
   color: #42b983;
 }
-th{
+th,td,p{
   color: #fff;
 }
 </style>
