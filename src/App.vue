@@ -25,6 +25,13 @@
                 <th>Borrar</th>
               </tr>
             </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" class="mt-3"></td>
+                <td ></td>
+                <td><button class="btn btn-danger mt-3">Eliminar</button></td>
+              </tr>
+            </tbody>
            </table>
             </div>
           </div>
