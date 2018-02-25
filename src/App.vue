@@ -1,62 +1,12 @@
 <template>
   <div id="app">
-  <header class="header">
-  <div id="particles-js"></div>
-    <div class="container">
-      <nav class="text-center">
-        <h1 v-text="nameApp"></h1>
-      </nav>
-    </div>
-  </header>
+  <titulo></titulo>
 
    <!--Estructura de las tablas-->   
-     <div class="container mt-5">
-      <form class="mb-5">
-        <input class="mr-5 text-center" type="text" placeholder="Escribe Tú Tarea">
-      <input type="submit" value="Añadir tarea" class="btn btn-success">
-       </form>
-          <div class="row">
-            <div class="col">
-             <table class="table">
-            <thead class="table-bordered">
-              <tr>
-                <th>¡Hecho!</th>
-                <th>Tarea</th>
-                <th>Borrar</th>
-              </tr>
-            </thead>
-            <tbody class="">
-              <tr>
-                <td><input type="checkbox"></td>
-                <td class="">Primer tarea</td>
-                <td><button class="btn btn-danger ">Eliminar</button></td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td class="">segunda tarea</td>
-                <td><button class="btn btn-danger ">Eliminar</button></td>
-              </tr>
-              <tr>
-                  <td><input type="checkbox"></td>
-                  <td class="">tercera tarea</td>
-                  <td><button class="btn btn-danger ">Eliminar</button></td>
-              </tr>
-            </tbody>
-           </table>
-            </div>
-          </div>
-        </div>
+    <vueTable></vueTable>
     <!--Fin de las tablas-->
     <!--Footer-->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col mt-5">
-            <p>Todos los derechos reservados &reg; Northerchild-2018</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+      <vueFooter></vueFooter>
      <!--Fin Footer-->
   </div>
 </template>
@@ -104,5 +54,11 @@ a {
 }
 th,td,p{
   color: #fff;
+}
+.app-form input{
+  border-radius: 0;
+}
+.tareaRealizada {
+  text-decoration: line-through;
 }
 </style>
