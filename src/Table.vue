@@ -1,7 +1,7 @@
 <template>
 	 <div class="container mt-5">
-      <form class="mb-5">
-        <input class="mr-5 text-center" type="text" placeholder="Escribe Tú Tarea">
+      <form class="mb-5" @submit.prevent="agregarTarea">
+      <input class="mr-5 text-center" type="text" placeholder="Escribe Tú Tarea" v-model="tareas.titulo">
       <input type="submit" value="Añadir tarea" class="btn btn-success">
        </form>
           <div class="row">
@@ -47,7 +47,13 @@ export default {
       ]
     }
   },methods:{
-
+    agregarTarea:function(){
+      this.tareas.push({
+        titulo: this.tareas.titulo,
+        hecho: false
+      })
+      this.tareas.titulo = ''
+    }
   }
 }
 </script>
