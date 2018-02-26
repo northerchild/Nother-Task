@@ -60,5 +60,6 @@ th,td,p{
 }
 .tareaRealizada {
   text-decoration: line-through;
+  text-decoration-color: #ff0000;
 }
 </style>

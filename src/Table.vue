@@ -16,8 +16,8 @@
             </thead>
             <tbody class="">
               <tr v-for="tarea in tareas">
-                <td><input type="checkbox"></td>
-                <td class="">{{tarea.titulo}}</td>
+                <td><input type="checkbox" v-model="tarea.hecho"></td>
+                <td :class="{tareaRealizada: tarea.hecho}">{{tarea.titulo}}</td>
                 <td><button class="btn btn-danger ">Eliminar</button></td>
               </tr>
             </tbody>
