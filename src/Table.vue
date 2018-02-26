@@ -18,7 +18,7 @@
               <tr v-for="tarea in tareas">
                 <td><input type="checkbox" v-model="tarea.hecho"></td>
                 <td :class="{tareaRealizada: tarea.hecho}">{{tarea.titulo}}</td>
-                <td><button class="btn btn-danger ">Eliminar</button></td>
+                <td><button @click="eliminarTarea(index)" class="btn btn-danger ">Eliminar</button></td>
               </tr>
             </tbody>
            </table>
@@ -47,12 +47,15 @@ export default {
       ]
     }
   },methods:{
-    agregarTarea:function(){
+    agregarTarea:function(tarea){
       this.tareas.push({
         titulo: this.tareas.titulo,
         hecho: false
       })
       this.tareas.titulo = ''
+    },
+    eliminarTarea:function(index){
+      this.tareas.splice(index,1)
     }
   }
 }
