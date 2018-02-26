@@ -1,7 +1,6 @@
 <template>
   <div id="app">
   <titulo></titulo>
-
    <!--Estructura de las tablas-->   
     <vueTable></vueTable>
     <!--Fin de las tablas-->
@@ -15,7 +14,7 @@ export default {
   name: 'app',
   data () {
     return {
-      nameApp: 'Norther-Task'
+      nameApp: 'Norther-Task',
     }
   }
 }
