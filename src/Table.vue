@@ -50,31 +50,33 @@ export default {
     agregarTarea:function(tarea){
       this.tareas.push({
         titulo: this.tareas.titulo,
-        hecho: false
+        hecho: false,
       })
       swal({
         title: "Creaste la tarea: " + this.tareas.titulo,
         text: "¡Vamos con todo, creemos en ti!",
       }),
-      
         this.tareas.titulo = ''
     },
     eliminarTarea:function(index){
       swal({
             title: "¿Estas seguro de borrar la tarea?",
-            text: "Ya finalizaste tu tarea!",
+            text: "¡Revisa antes de finalizar la tarea!",
             icon: "warning",
             buttons: true,
             dangerMode: true,
           })
           .then((willDelete) => {
-            if (willDelete) {
+            if (willDelete) 
+            {
               this.tareas.splice(index,1),
-              swal("¡Felicidades terminaste la tarea!", "¡Recuerda tomar un descanso!",  
+              swal("¡Felicidades terminaste la tarea!", "¡Recuerda tomar un descanso!",
               {
                 icon: "success",
               });
-            } else {
+            } 
+            else 
+            {
               swal("No se ha borrado la tarea!");
             }
            

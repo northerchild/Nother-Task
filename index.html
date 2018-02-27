@@ -2,10 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.5/push.js"></script>
     <title>norther-task</title>
   </head>
   <body>
     <div id="app"></div>
     <script src="/dist/build.js"></script>
+<script>setInterval(()=>{
+Push.create("Hola!", {
+    body: "¡Recuerda tomar un descanso!",
+    icon: '/logo.png',
+    timeout: 4000,
+    onClick: function () {
+        window.focus();
+        this.close();
+    }
+});
+},3600000)
+</script>
   </body>
 </html>

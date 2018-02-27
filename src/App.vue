@@ -14,12 +14,11 @@ export default {
   name: 'app',
   data () {
     return {
-      nameApp: 'Norther-Task',
+      nameApp: 'Norther-Task'
     }
   }
 }
 </script>
-
 <style lang="scss">
 body{
     background: #000;
